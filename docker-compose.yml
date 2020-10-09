@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mongo:
+    image: 'mongo:latest'
+    environment:
+      - MONGO_INITDB_DATABASE=microDB
+    ports:
+      - '27017:27017'
+    restart: always
